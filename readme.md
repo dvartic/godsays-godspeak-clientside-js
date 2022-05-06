@@ -4,6 +4,7 @@ The original program made by Terry A. Davis is very simple and made of the follo
 * A dictionary made by himself based on his ideas. It contains 712 strings, some of them words, some of them phrases.
 * A source of randomness: /dev/urandom which is a file that allows access to environmental noise to generate pseudorandom bytes. Used in Unix-like Operating Systems.
 * An array shuffler: gshuf, a GNU coreutil. Terry decided that the ouput should be of 32 strings.
+<!-- -->
 The original Bash script is as follows:
 ```
 #!/bin/bash
@@ -14,6 +15,7 @@ Terry made GodSpeak for his GNU+Linux machine. Terry liked these random text gen
 ## What makes this port unique?
 * I used window.crypto.getRandomValues as the source of randomness. This method will use your system built-in cryptographically secure pseudorandom bytes generator. If using an UNIX-like system, it will use /dev/urandom. This is consistent with Terry A. Davis ideas.
 * It uses an array shuffler, similar to gshuf.
+<!-- -->
 I also have a NodeJS variation that uses crypto.randomBytes(): https://github.com/dvartic/godsays-godspeak-nodejs
 ## Instalation:
 Clone this repository:
